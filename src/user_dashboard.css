@@ -1,0 +1,178 @@
+.user_dashboard {
+  width: 100%;
+  background-image: linear-gradient(#f39c12, #27ae60);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #27ae60;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo_img img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: bottom;
+  margin-top: 15px;
+}
+
+.menu 
+  display: flex;
+  margin-right: 50px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin-top: 13px;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #ffffff; /* White */
+}
+
+.menu .profile img {
+  margin-left: 10px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.body {
+  height: 775px;
+  border: 1px solid;
+}
+
+.cardbox {
+  margin: 0 auto;
+  margin-top: 90px;
+  padding-top: 50px;
+  width: 900px;
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  width: 250px;
+  height: 180px;
+  margin: 0px 50px;
+  background-color: #ba7a12c7;
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+.card p {
+  margin-top: 20px;
+}
+
+.card .btn {
+  width: 200px;
+  height: 70px;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: #34495e;
+  color: #7affd7;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.bottom_body {
+  margin-top: 5px;
+  margin-left: 1770px;
+  position: relative;
+}
+
+.bottom_body h4 {
+  margin-left: 5px;
+  font-size: 22px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #27ae60;
+  height: 67px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card.animate {
+  animation: slideIn 0.5s forwards;
+}
