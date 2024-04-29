@@ -11,12 +11,12 @@
 /*              Body Start              */
 
 .body {
+  padding-top: 120px;
   height: 775px;
 }
 
 .cardbox {
   margin: 0 auto;
-  margin-top: 90px;
   padding-top: 50px;
   width: 900px;
   height: 550px;
@@ -28,11 +28,14 @@
 .card {
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  padding: 0px;
+  padding-top: 12px;
   width: 250px;
   height: 180px;
   margin: 0px 50px;
-  background-color: #ba7a12c7;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5.8px);
+  -webkit-backdrop-filter: blur(5.8px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
   text-align: center;
 }
 
@@ -55,7 +58,7 @@
   background-color: #34495e;
   color: #7affd7;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
