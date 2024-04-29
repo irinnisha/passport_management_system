@@ -38,20 +38,12 @@
     width: 50%;
     height: 535px;
     text-align: center;
-    /* border-radius: 10px;
-    /* background-image: url("../img/form_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%; */
-    /* background-image: radial-gradient(#92352e 2%, #20c444); */
-    /* box-shadow: 5px 5px 70px rgb(0, 183, 255), 10px 10px 70px red, 15px 15px 70px green; */
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.1);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.8px);
--webkit-backdrop-filter: blur(5.8px);
-border: 1px solid rgba(255, 255, 255, 0.19);
-    
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
 }
 
 .form_header{
@@ -93,12 +85,6 @@ border: 1px solid rgba(255, 255, 255, 0.19);
 }
 
 /* .form_button{} */
-
-@property --a{
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0deg;
-}
 
 @keyframes child1{
     0%{
