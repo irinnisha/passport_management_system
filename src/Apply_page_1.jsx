@@ -42,25 +42,25 @@ function Apply_page_1() {
                         <table>
                             <tr>
                                 <td><label>Full Name(): </label></td>
-                                <td><input type="text" value=""/></td>
+                                <td><input placeholder="Enter your full name" type="text" value="" /></td>
                             </tr>
                             <tr>
                                 <td><label>Given Name(): </label></td>
-                                <td><input type="text" value=""/></td> 
+                                <td><input placeholder="Enter your given name" type="text" value="" /></td> 
                             </tr>
                             <tr>
                                 <td><label>Surname(): </label></td>
-                                <td><input type="text" value=""/></td>
+                                <td><input placeholder="Enter your surname" type="text" value="" /></td>
                             </tr>
                             <tr>
                                 <td><label>Date of Birth(): </label></td>
-                                <td><input type="date" value=""/></td>
+                                <td><input type="date" value="" /></td>
                             </tr>
                             <tr>
                                 <td><label>Country of Birth(): </label></td>
                                 <td>
                                     <select name="country_of_birth" id="">
-                                        <option value="">Select a Country of Birth</option>
+                                        <option value="">Select your Country of Birth</option>
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Albania">Albania</option>
                                         <option value="Algeria">Algeria</option>
@@ -252,18 +252,18 @@ function Apply_page_1() {
                                 <td><label>District of Birth(): </label></td>
                                 <td>
                                     <select name="district_of_birth" id="">
-                                        <option>Select a District of Birth</option>
+                                        <option>Select your District of Birth</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
                                 <td><label>Place of Birth(): </label></td>
-                                <td><input type="text" value=""/></td>
+                                <td><input placeholder="Enter your place of birth" type="text" value="" /></td>
                             </tr>
                             <tr>
                                 <td><label>Gender(): </label></td>
                                 <td><select name="gender" id="">
-                                    <option>Select a Gender</option>
+                                    <option>Select your Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
                                     <option value="other">other</option>
@@ -271,10 +271,10 @@ function Apply_page_1() {
                             </tr>
                             <tr>
                                 <td><label>Religion(): </label></td>
-                                <td><input type="text" value=""/></td>
+                                <td><input placeholder="Enter your religion" type="text" value="" /></td>
                             </tr>
                         </table>
-                    </div>   
+                    </div>
                     <div class="form_button">
                         <a href="./Apply_page_2">
                             <span></span>
@@ -286,15 +286,15 @@ function Apply_page_1() {
                     </div>
                 </form>
             </div>
-        </div>                                                                                              {/*<!-- Body Section End -->*/}
-        <div class="footer">                                                                                {/*<!-- Footer Section Start -->*/}
+        </div>                                                                                                 {/*<!-- Body Section End -->*/}
+        <div class="footer">                                                                                   {/*<!-- Footer Section Start -->*/}
             <ul>
                 <li><a href="#">Instruction</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-        </div>
-    </div>
+        </div>                                                                                                  {/*<!-- Footer Section End -->*/}
+    </div>                                                                                                      
     );
 }
 

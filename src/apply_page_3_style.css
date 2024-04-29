@@ -1,0 +1,21 @@
+
+
+.body{
+    padding-top: 15px;
+}
+
+.form_field{
+    padding-top: 20px;
+}
+
+.form_container{
+    height: 745px;  
+}
+
+.form_field table tr td input{
+    width: 220px;
+}
+
+.form_field table tr td select{
+    width: 220px;
+}

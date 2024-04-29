@@ -41,69 +41,69 @@ function Apply_page_2() {
                         <div class="form_field">
                             <table>
                                 <tr>
-                                    <td><label>National ID No. (): </label></td>
-                                    <td><input type="text" /></td>
+                                    <td><label>National ID No.(): </label></td>
+                                    <td><input placeholder="Enter your national ID no." type="text" /></td>
                                 </tr>
                                 <tr>
-                                    <td><label>Birth Registration No. (): </label></td>
-                                    <td><input type="text" /></td>
+                                    <td><label>Birth Registration No.(): </label></td>
+                                    <td><input placeholder="Enter your birth registration no." type="text" /></td>
                                 </tr>
                                 <tr>
-                                    <td><label>Type of Citizenship (): </label></td>
+                                    <td><label>Type of Citizenship(): </label></td>
                                     <td>
                                         <select name="type_of_citizenship" id="">
-                                            <option value=""></option>
+                                            <option>Select your type of citizenship</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label>Dual Citizenship Status (): </label></td>
-                                    <td><input type="text" /></td>
+                                    <td><label>Dual Citizenship Status(): </label></td>
+                                    <td><input placeholder="Enter your dual citizenship status" type="text" /></td>
                                 </tr>
                                 <tr>
-                                    <td><label>Country of Other Citizenship (): </label></td>
+                                    <td><label>Country of Other Citizenship(): </label></td>
                                     <td><select name="country_of_other_citizenship" id="">
-                                            <option value=""></option>
+                                            <option>select the country of other citizenship</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label>Foreign Passport No. (): </label></td>
-                                    <td><input type="text" /></td>
+                                    <td><label>Foreign Passport No.(): </label></td>
+                                    <td><input placeholder="Enter your foreign passport no." type="text" /></td>
                                 </tr>
                                 <tr>
-                                    <td><label>Marital Status (): </label></td>
+                                    <td><label>Marital Status(): </label></td>
                                     <td>
                                         <select name="marital_status" id="">
-                                            <option value=""></option>
+                                            <option>select your marital status</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label>Profession (): </label></td>
+                                    <td><label>Profession(): </label></td>
                                     <td>
                                         <select name="profession" id="">
-                                            <option value=""></option>
+                                            <option>select your profession</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label>Contact No. (): </label></td>
+                                    <td><label>Contact No.(): </label></td>
                                     <td>
                                         <select name="country_code" id="country_code">
                                             <option value="880">880</option>
                                         </select>
-                                        <input name="phone_no" id="phone_no" min="1111111111" max="9999999999" maxlength="10" type="number" />
+                                        <input name="phone_no" placeholder="Enter your contact no." id="phone_no" type="number" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><label>E-mail (): </label></td>
-                                    <td><input name="email" type="email" /></td>
+                                    <td><label>E-mail(): </label></td>
+                                    <td><input name="email" placeholder="Enter your e-mail" type="email" /></td>
                                 </tr>
                             </table>
                         </div>   
                         <div class="form_button">
-                            <a href="#">
+                            <a href="./Apply_page_3">
                                 <span></span>
                                 <span></span>
                                 <span></span>
