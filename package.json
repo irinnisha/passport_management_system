@@ -34,7 +34,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "start": "node index.jsx"
+    "start": "node src/index.jsx"
   },
   "browserslist": [
     ">0.2%",
