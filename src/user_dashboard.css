@@ -8,58 +8,7 @@
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  background-color: #27ae60;
-  height: 70px;
-}
-
-.logo {
-  display: flex;
-}
-
-.logo_img img {
-  width: 50px;
-  border-radius: 50%;
-}
-
-.heading {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: bottom;
-  margin-top: 15px;
-}
-
-.menu {
-  display: flex;
-  margin-right: 50px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin-top: 13px;
-}
-
-.menu ul li {
-  display: inline-block;
-  margin-right: 25px;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  color: #ffffff; /* White */
-}
-
-.menu .profile img {
-  margin-left: 10px;
-  width: 50px;
-  border-radius: 50%;
-}
+/*              Body Start              */
 
 .body {
   height: 775px;
@@ -138,29 +87,7 @@
   font-size: 22px;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #27ae60;
-  height: 67px;
-}
-
-.footer ul {
-  list-style-type: none;
-}
-
-.footer ul li {
-  display: inline-block;
-  margin-right: 25px;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.footer ul li a {
-  text-decoration: none;
-  color: #ffffff;
-}
+/*              Body End              */
 
 @keyframes slideIn {
   0% {
