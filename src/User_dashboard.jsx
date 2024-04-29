@@ -47,7 +47,7 @@ function User_dashboard() {
               <button
                 className="btn"
                 type="button"
-                onClick={() => handleNavigation("/apply")}
+                onClick={() => handleNavigation("/Apply_page_1")}
               >
                 Start New Application
               </button>
