@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import "./apply_page_style.css";
+import "./apply_page_2_style.css";
 
 function Apply_page_2() {
 
@@ -92,7 +93,7 @@ function Apply_page_2() {
                                         <select name="country_code" id="country_code">
                                             <option value="880">880</option>
                                         </select>
-                                        <input name="phone_no" id="phone_no" type="number" />
+                                        <input name="phone_no" id="phone_no" min="1111111111" max="9999999999" maxlength="10" type="number" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -102,7 +103,7 @@ function Apply_page_2() {
                             </table>
                         </div>   
                         <div class="form_button">
-                            <a href="apply_page_2.html">
+                            <a href="#">
                                 <span></span>
                                 <span></span>
                                 <span></span>

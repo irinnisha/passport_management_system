@@ -1,0 +1,18 @@
+
+
+.body{
+    padding-top: 90px;
+}
+
+.form_container{
+    height: 580px;  
+}
+
+#country_code{
+    width: 50px;
+}
+
+#phone_no{
+    width: 150px;
+    margin-left: 0px;
+}

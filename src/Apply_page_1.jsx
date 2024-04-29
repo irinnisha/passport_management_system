@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import "./apply_page_style.css";
+import "./apply_page_1_style.css";
 
 function Apply_page_1() {
 
