@@ -23,7 +23,7 @@ app.post("/", (req, res) => {
 });
 
 const mongoURI =
-  "mongodb+srv://yasin:12345@passport.ahri6i9.mongodb.net/?retryWrites=true&w=majority&appName=passport";
+  "mongodb+srv://yasin:<12345>@passport.ahri6i9.mongodb.net/?retryWrites=true&w=majority&appName=passport";
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
