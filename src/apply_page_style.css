@@ -21,7 +21,6 @@
 
 .body{
     height: 83.2vh;
-    padding-top: 110px;
     background-image: var(--gradient);
     background-size: 400%;
     animation: bg-animation 20s infinite alternate;
@@ -36,7 +35,6 @@
     margin: 0 auto;
     padding: 20px 5px;
     width: 50%;
-    height: 535px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
@@ -44,6 +42,7 @@
     backdrop-filter: blur(5.8px);
     -webkit-backdrop-filter: blur(5.8px);
     border: 1px solid rgba(255, 255, 255, 0.19);
+    
 }
 
 .form_header{
@@ -85,6 +84,12 @@
 }
 
 /* .form_button{} */
+
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
 
 @keyframes child1{
     0%{

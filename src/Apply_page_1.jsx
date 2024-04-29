@@ -275,7 +275,7 @@ function Apply_page_1() {
                         </table>
                     </div>   
                     <div class="form_button">
-                        <a href="#">
+                        <a href="./Apply_page_2">
                             <span></span>
                             <span></span>
                             <span></span>
