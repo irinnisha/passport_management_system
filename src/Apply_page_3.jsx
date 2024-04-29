@@ -32,13 +32,13 @@ function Apply_page_3() {
                     </div>
                 </div>
             </div>                                                                                              {/*<!-- Header Section End -->*/}
-            <div class="body">                                                                                  {/*<!-- Body Section Start -->*/}
-                <div class="form_container">
+            <div class="body body_page3">                                                                                  {/*<!-- Body Section Start -->*/}
+                <div class="form_container form_container_page3">
                     <form action="" method="post">
                         <div class="form_header">
                             Applicant's Permanent Address
                         </div>
-                        <div class="form_field">
+                        <div class="form_field form_field_page3">
                             <table>
                                 <tr>
                                     <td><label>District (): </label></td>

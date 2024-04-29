@@ -32,8 +32,8 @@ function Apply_page_2() {
                     </div>
                 </div>
             </div>                                                                                              {/*<!-- Header Section End -->*/}
-            <div class="body">                                                                                  {/*<!-- Body Section Start -->*/}
-                <div class="form_container">
+            <div class="body body_page2">                                                                                  {/*<!-- Body Section Start -->*/}
+                <div class="form_container form_container_page2">
                     <form action="" method="post">
                         <div class="form_header">
                             Personal Information

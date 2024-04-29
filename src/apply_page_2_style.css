@@ -1,10 +1,10 @@
 
 
-.body{
+.body_page2{
     padding-top: 90px;
 }
 
-.form_container{
+.form_container_page2{
     height: 580px;  
 }
 
@@ -13,7 +13,7 @@
 }
 
 #phone_no{
-    width: 200px;
+    width: 170px;
     margin-left: 0px;
 }
 
