@@ -81,7 +81,7 @@ function Apply_page_3() {
                         <div class="form_header">
                             Applicant's Present Address
                         </div>
-                        <div class="form_field">
+                        <div class="form_field form_field_page3">
                             <table>
                                 <tr>
                                     <td><label>Country (): </label></td>

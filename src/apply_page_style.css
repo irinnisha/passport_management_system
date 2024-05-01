@@ -73,13 +73,19 @@
 } 
 
 .form_field table tr td input{
+    text-transform: capitalize;
     margin-left: 300px;
     width: 200px;
+    height: 30px;
+    padding-left: 10px;
 }
 
 .form_field table tr td select{
+    text-transform: capitalize;
     margin-left: 300px;
     width: 200px;
+    height: 30px;
+    padding-left: 6px;
 }
 
 /* .form_button{} */

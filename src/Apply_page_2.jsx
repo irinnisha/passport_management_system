@@ -38,7 +38,7 @@ function Apply_page_2() {
                         <div class="form_header">
                             Personal Information
                         </div>
-                        <div class="form_field">
+                        <div class="form_field form_field_page2">
                             <table>
                                 <tr>
                                     <td><label>National ID No.(): </label></td>

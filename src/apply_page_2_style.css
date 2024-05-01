@@ -1,11 +1,11 @@
 
 
 .body_page2{
-    padding-top: 90px;
+    padding-top: 50px;
 }
 
 .form_container_page2{
-    height: 580px;  
+    height: 680px;  
 }
 
 #country_code{
@@ -13,14 +13,14 @@
 }
 
 #phone_no{
-    width: 170px;
+    width: 200px;
     margin-left: 0px;
 }
 
-.form_field table tr td input{
+.form_field_page2 table tr td input{
     width: 250px;
 }
 
-.form_field table tr td select{
+.form_field_page2 table tr td select{
     width: 250px;
 }
