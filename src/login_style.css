@@ -90,7 +90,8 @@
 }
 
 .login_btn button:hover {
-  background-color: #29c768;
+  background-color: #21ad59;
+  color: #39f6bd;
 }
 
 .register_ac_link {

@@ -13,7 +13,7 @@
 :root{
     --gradient: linear-gradient(
         45deg,
-        #09ce13c9,
+        #07960ecc,
         #09ce1385,
         #ce0909b2
     );
@@ -165,7 +165,7 @@
 }
 
 .form_button a:hover{
-    color: #d736b4f0;
+    color: #bdf81c;
     background: #259f4d;
     box-shadow: 0 0 10px #259f4d, 0 0 40px #259f4d, 0 0 80px #259f4d;
     transition-delay: 0.5s;

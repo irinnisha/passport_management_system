@@ -42,6 +42,7 @@ function Login() {
                 value={formData.nid_bc_no}
                 onChange={handleInputChange}
                 required
+                placeholder="Enter your NID/Birth Certificate Number"
               />
               {errors.nid_bc_no && <p className="error">{errors.nid_bc_no}</p>}
             </div>
@@ -57,6 +58,7 @@ function Login() {
                 value={formData.password}
                 onChange={handleInputChange}
                 required
+                placeholder="Enter your Password"
               />
               {errors.password && <p className="error">{errors.password}</p>}
             </div>
@@ -76,18 +78,16 @@ function Login() {
             </div>
 
             <div className="login_btn">
-              <button className="login-btn glass-button" type="submit">
+              <button className="login-btn" type="submit">
                 Login
               </button>
             </div>
 
             <div className="register_ac_link">
               <p>Don't have an account? </p>
-              <Link to="/">
-                <button className="register-btn glass-button">
+                <a className="register-btn glass-button" href="/">
                   Register Account
-                </button>
-              </Link>
+                </a>
             </div>
           </form>
         </div>

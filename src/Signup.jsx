@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./styles.css";
 import "./signup_style.css";
+import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -53,12 +54,14 @@ export default function Signup() {
                 <label htmlFor="nid_bc_no">NID/Birth Certificate Number:</label>
               </div>
               <div className="input-field">
+                <FontAwesomeIcon icon="fa-solid fa-id-card" />
                 <input
                   name="nid_bc_no"
                   type="text"
                   value={formData.nid_bc_no}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your NID/Birth Certificate Number"
                 />
               </div>
               <div className="label">
@@ -71,6 +74,7 @@ export default function Signup() {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your Email"
                 />
               </div>
               <div className="label">
@@ -83,6 +87,7 @@ export default function Signup() {
                   value={formData.phone_no}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your Phone no."
                 />
               </div>
               <div className="label">
@@ -95,6 +100,7 @@ export default function Signup() {
                   value={formData.password}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your password"
                 />
               </div>
               <div className="label">
@@ -107,16 +113,17 @@ export default function Signup() {
                   value={formData.confirmPassword}
                   onChange={handleChange}
                   required
+                  placeholder="Enter your Confirm Password"
                 />
               </div>
               <div className="signup_btn">
-                <button type="submit" className="signup-btn glass-button">
+                <button type="submit" className="signup-btn">
                   Sign Up
                 </button>
               </div>
-              <div className="login_ac_link">
+              <div className="login_ac_link ">
                 <p>If you have an account? </p>
-                <Link to="/Login">Login Here</Link>
+                <a className="glass-button" href="/Login">Login Here</a>
               </div>
             </form>
           </div>

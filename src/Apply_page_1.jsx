@@ -54,7 +54,7 @@ function Apply_page_1() {
                             </tr>
                             <tr>
                                 <td><label>Date of Birth(): </label></td>
-                                <td><input type="date" value="" /></td>
+                                <td><input id="dob" type="date" value="" /></td>
                             </tr>
                             <tr>
                                 <td><label>Country of Birth(): </label></td>

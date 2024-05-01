@@ -47,11 +47,10 @@
   height: 32px;
   border-radius: 20px;
  /* background-image: url("../img/bg-1.jpg");*/
+  padding-left: 10px;
   background-size: 8px;
   color: #2c3e50;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease; 
+  text-transform: capitalize;
 }
 
 .input-field input:focus {
@@ -75,20 +74,19 @@
 }
 
 .signup_btn button:hover {
-  background-color: #29c768; 
+  color: #39f6bd;
+  background-color: #21ad59;
 }
 
 .glass-button {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
 
 .glass-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #39f6bd;
+  text-decoration: underline;
 }
 
 .login_ac_link {
@@ -104,13 +102,12 @@
   padding: 0;
   text-align: left;
   text-decoration: none;
-  color: #4caf50;
+  color: #8afcda;
   font-weight: bold;
   transition: color 0.3s ease; 
   background-color: transparent;
-  border: 1px solid #4caf50;
-  display: inline;
-  font-size: 12px;
+  display: inline-block;
+  font-size: 14px;
   margin: 3px 2px;
   cursor: pointer;
   border-radius: 3px;
