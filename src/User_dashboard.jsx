@@ -87,13 +87,13 @@ function User_dashboard() {
         <div className="footer">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Instruction</Link>
             </li>
             <li>
-              <Link to="/status">Status</Link>
+              <Link to="/status">FAQ</Link>
             </li>
             <li>
-              <Link to="/apply">Apply E-Passport</Link>
+              <Link to="/apply">Contact Us</Link>
             </li>
           </ul>
         </div>

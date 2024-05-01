@@ -87,7 +87,7 @@ function Apply_page_3() {
                                     <td><label>Country (): </label></td>
                                     <td>
                                         <select name="country" id="">
-                                            <option>Select a Country</option>
+                                            <option>Select your Country</option>
                                             <option value="Afghanistan">Afghanistan</option>
                                             <option value="Albania">Albania</option>
                                             <option value="Algeria">Algeria</option>
