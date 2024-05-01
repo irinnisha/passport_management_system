@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios"; // Import axios
-import { useLoginForm } from "./validation"; // Import custom hook
+import axios from "axios";
+import { useLoginForm } from "./validation";
 
 import "./login_style.css";
 import "./styles.css";
@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/Login", formData);
+      const response = await axios.post("http://localhost:5001/Login", formData); // Update the URL
       if (response.data.success) {
         window.location.href = "/User_dashboard";
       }
