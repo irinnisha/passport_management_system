@@ -1,20 +1,20 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 5001;
 
+// Enable CORS
+app.use(cors());
+
 // MongoDB connection URI
 const MONGODB_URI = "mongodb+srv://yasin:12345@passport.ahri6i9.mongodb.net/?retryWrites=true&w=majority&appName=passport";
-
-// Connect to MongoDB
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
 const db = mongoose.connection;
-
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 db.once("open", () => {
   console.log("Connected to MongoDB");
@@ -27,7 +27,6 @@ const userSchema = new mongoose.Schema({
   phone_no: { type: String, required: true },
   password: { type: String, required: true },
 });
-
 const User = mongoose.model("User", userSchema);
 
 // Middleware to parse JSON bodies
@@ -36,18 +35,14 @@ app.use(express.json());
 // Login endpoint
 app.post("/Login", async (req, res) => {
   const { email, password } = req.body;
-
   try {
     const user = await User.findOne({ email });
-
     if (!user) {
       return res.status(400).json({ message: "User not found" });
     }
-
     if (password !== user.password) {
       return res.status(401).json({ message: "Invalid password" });
     }
-
     // Authentication successful
     return res.status(200).json({ message: "Login successful" });
   } catch (error) {
@@ -82,3 +77,4 @@ app.post("/", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
