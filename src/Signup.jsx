@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./styles.css";
 import "./signup_style.css";
-import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+
 
 export default function Signup() {
   const [formData, setFormData] = useState({
@@ -54,7 +54,7 @@ export default function Signup() {
                 <label htmlFor="nid_bc_no">NID/Birth Certificate Number:</label>
               </div>
               <div className="input-field">
-                <FontAwesomeIcon icon="fa-solid fa-id-card" />
+                <i class="fa-solid fa-id-card"></i>
                 <input
                   name="nid_bc_no"
                   type="text"
