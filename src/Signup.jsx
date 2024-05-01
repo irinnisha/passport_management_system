@@ -25,7 +25,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5173");
+      const response = await axios.post("/");
       if (response.data.success) {
         window.location.href = "/Login";
       } else {

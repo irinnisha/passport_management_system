@@ -1,36 +1,32 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
+const loginRouter = require("./Login");
 
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-// Enable CORS
-app.use(cors());
-
 // MongoDB connection URI
-const MONGODB_URI = "mongodb+srv://yasin:12345@passport.ahri6i9.mongodb.net/?retryWrites=true&w=majority&appName=passport";
+const MONGODB_URI =
+  "mongodb+srv://yasin:12345@passport.ahri6i9.mongodb.net/?retryWrites=true&w=majority&appName=passport";
+
+// Connect to MongoDB
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 const db = mongoose.connection;
+
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 db.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
-// Define user schema and model
-const userSchema = new mongoose.Schema({
-  nid_bc_no: { type: String, required: true },
-  email: { type: String, required: true },
-  phone_no: { type: String, required: true },
-  password: { type: String, required: true },
-});
-const User = mongoose.model("User", userSchema);
-
 // Middleware to parse JSON bodies
 app.use(express.json());
+
+// Mount the login route handler
+app.use("/Login", loginRouter);
 
 // Login endpoint
 app.post("/Login", async (req, res) => {

@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5001/Login", formData); // Update the URL
+      const response = await axios.post("/Login", formData); // Update the URL
       if (response.data.success) {
         window.location.href = "/User_dashboard";
       }
