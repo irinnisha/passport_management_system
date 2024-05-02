@@ -78,17 +78,6 @@
   background-color: #21ad59;
 }
 
-.glass-button {
-  backdrop-filter: blur(5px);
-  color: #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-.glass-button:hover {
-  color: #39f6bd;
-  text-decoration: underline;
-}
-
 .login_ac_link {
   margin-top: 25px;
   font-size: 14px;
