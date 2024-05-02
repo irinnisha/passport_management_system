@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios"; // Import axios
-import { useLoginForm } from "./validation"; // Import custom hook
+import axios from "axios";
+import { useLoginForm } from "./validation"; 
 
 import "./login_style.css";
 import "./styles.css";
