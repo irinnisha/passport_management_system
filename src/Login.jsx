@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { useLoginForm } from "./validation";
+import { useLoginForm } from "./validation"; 
 
 import "./login_style.css";
 import "./styles.css";
@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5001/Login", formData);
+      const response = await axios.post("/Login", formData);
       if (response.data.success) {
         window.location.href = "/User_dashboard";
       }
@@ -42,7 +42,6 @@ function Login() {
                 value={formData.nid_bc_no}
                 onChange={handleInputChange}
                 required
-                placeholder="Enter your NID/Birth Certificate Number"
               />
               {errors.nid_bc_no && <p className="error">{errors.nid_bc_no}</p>}
             </div>
@@ -58,7 +57,6 @@ function Login() {
                 value={formData.password}
                 onChange={handleInputChange}
                 required
-                placeholder="Enter your Password"
               />
               {errors.password && <p className="error">{errors.password}</p>}
             </div>
@@ -78,16 +76,18 @@ function Login() {
             </div>
 
             <div className="login_btn">
-              <button className="login-btn" type="submit">
+              <button className="login-btn glass-button" type="submit">
                 Login
               </button>
             </div>
 
             <div className="register_ac_link">
               <p>Don't have an account? </p>
-                <a className="register-btn glass-button" href="/">
+              <Link to="/">
+                <button className="register-btn glass-button">
                   Register Account
-                </a>
+                </button>
+              </Link>
             </div>
           </form>
         </div>
