@@ -7,7 +7,7 @@ import "./apply_page_1_style.css";
 function Apply_page_1() {
 
     const handleNavigation = (path) => {
-        window.location.href = path; // Redirect to the specified path
+        window.location.href = path; 
       };
 
     return (
@@ -41,23 +41,23 @@ function Apply_page_1() {
                     <div class="form_field">
                         <table>
                             <tr>
-                                <td><label>Full Name(): </label></td>
+                                <td><label>Full Name (পূর্ননাম): </label></td>
                                 <td><input placeholder="Enter your full name" type="text" value="" /></td>
                             </tr>
-                            <tr>
+                            {/* <tr>
                                 <td><label>Given Name(): </label></td>
                                 <td><input placeholder="Enter your given name" type="text" value="" /></td> 
-                            </tr>
+                            </tr> */}
                             <tr>
-                                <td><label>Surname(): </label></td>
+                                <td><label>Surname (পদবি): </label></td>
                                 <td><input placeholder="Enter your surname" type="text" value="" /></td>
                             </tr>
                             <tr>
-                                <td><label>Date of Birth(): </label></td>
+                                <td><label>Date of Birth (জন্ম তারিখ): </label></td>
                                 <td><input id="dob" type="date" value="" /></td>
                             </tr>
                             <tr>
-                                <td><label>Country of Birth(): </label></td>
+                                <td><label>Country of Birth (জন্মস্থান): </label></td>
                                 <td>
                                     <select name="country_of_birth" id="">
                                         <option value="">Select your Country of Birth</option>
@@ -249,7 +249,7 @@ function Apply_page_1() {
                                 </td>
                             </tr>
                             <tr>
-                                <td><label>District of Birth(): </label></td>
+                                <td><label>District of Birth (): </label></td>
                                 <td>
                                     <select name="district_of_birth" id="">
                                         <option>Select your District of Birth</option>

@@ -5,10 +5,8 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-// Enable CORS
 app.use(cors());
 
-// MongoDB connection URI
 const MONGODB_URI = "mongodb+srv://yasin:12345@passport.ahri6i9.mongodb.net/?retryWrites=true&w=majority&appName=passport";
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
@@ -20,7 +18,6 @@ db.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
-// Define user schema and model
 const userSchema = new mongoose.Schema({
   nid_bc_no: { type: String, required: true },
   email: { type: String, required: true },
@@ -29,7 +26,6 @@ const userSchema = new mongoose.Schema({
 });
 const User = mongoose.model("User", userSchema);
 
-// Middleware to parse JSON bodies
 app.use(express.json());
 
 // Login endpoint

@@ -14,9 +14,13 @@
 }
 
 .left_side {
-  width: 450px;
-  border: 1px solid #7affd7;
   border-radius: 30px;
+}
+
+.left_side img{
+  width: 450px;
+  height: 640px;
+  padding-right: 10px;
 }
 
 .right_side {
@@ -50,7 +54,7 @@
   padding-left: 10px;
   background-size: 8px;
   color: #2c3e50;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .input-field input:focus {

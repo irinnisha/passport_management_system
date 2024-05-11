@@ -26,7 +26,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5173");
+      const response = await axios.post("http://localhost:5173/");
       if (response.data.success) {
         window.location.href = "/Login";
       } else {
@@ -43,7 +43,7 @@ export default function Signup() {
       <div className="signup_body">
         <div className="signup_body_container">
           <div className="left_side">
-            <img src="" alt="" />
+            <img src="/img/Rectangle 50.png" alt="Rectangle 50.png" />
           </div>
           <div className="right_side">
             <form onSubmit={handleSubmit}>
@@ -117,9 +117,11 @@ export default function Signup() {
                 />
               </div>
               <div className="signup_btn">
-                <button type="submit" className="signup-btn">
-                  Sign Up
-                </button>
+                <Link to="/User_dashboard">
+                  <button type="submit" className="signup-btn">
+                    Sign Up
+                  </button>
+                </Link>
               </div>
               <div className="login_ac_link ">
                 <p>If you have an account? </p>

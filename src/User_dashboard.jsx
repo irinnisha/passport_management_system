@@ -5,7 +5,7 @@ import "./user_dashboard.css";
 
 function User_dashboard() {
   const handleNavigation = (path) => {
-    window.location.href = path; // Redirect to the specified path
+    window.location.href = path;
   };
 
   return (

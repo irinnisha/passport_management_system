@@ -7,7 +7,7 @@ import "./apply_page_3_style.css";
 function Apply_page_3() {
 
     const handleNavigation = (path) => {
-        window.location.href = path; // Redirect to the specified path
+        window.location.href = path; 
       };
 
     return (
@@ -314,7 +314,7 @@ function Apply_page_3() {
                             </table>
                         </div>                                                                                 
                         <div class="form_button">
-                            <a href="#">
+                            <a href="/User_dashboard">
                                 <span></span>
                                 <span></span>
                                 <span></span>

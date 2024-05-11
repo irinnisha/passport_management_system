@@ -7,7 +7,7 @@ import "./apply_page_2_style.css";
 function Apply_page_2() {
 
     const handleNavigation = (path) => {
-        window.location.href = path; // Redirect to the specified path
+        window.location.href = path; 
       };
 
     return (
