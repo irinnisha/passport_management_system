@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./styles.css";
 import "./signup_style.css";
 
-
-export default function Signup() {
+function Signup() {
   const [formData, setFormData] = useState({
     nid_bc_no: "",
     email: "",
@@ -26,11 +24,19 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/");
-      if (response.data.success) {
+      const response = await fetch("http://localhost:5173/signup", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(formData),
+});;
+
+      if (response.ok) {
         window.location.href = "/Login";
       } else {
-        alert(response.data.message);
+        const data = await response.json();
+        alert(data.message);
       }
     } catch (error) {
       console.error("Signup error:", error);
@@ -54,7 +60,6 @@ export default function Signup() {
                 <label htmlFor="nid_bc_no">NID/Birth Certificate Number:</label>
               </div>
               <div className="input-field">
-                <i class="fa-solid fa-id-card"></i>
                 <input
                   name="nid_bc_no"
                   type="text"
@@ -132,3 +137,5 @@ export default function Signup() {
     </div>
   );
 }
+
+export default Signup;
