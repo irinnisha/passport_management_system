@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+
+@font-face {
+  font-family: Icons;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.0/themes/default/assets/fonts/icons.eot);
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.0/themes/default/assets/fonts/icons.eot?#iefix) format('embedded-opentype'),
+       url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.0/themes/default/assets/fonts/icons.woff2) format('woff2'),
+       url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.0/themes/default/assets/fonts/icons.woff) format('woff'),
+       url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.0/themes/default/assets/fonts/icons.ttf) format('truetype'),
+       url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.0/themes/default/assets/fonts/icons.svg#icons) format('svg');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Accordion;
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfOIKAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zryj6HgAAAFwAAAAyGhlYWT/0IhHAAACOAAAADZoaGVhApkB5wAAAnAAAAAkaG10eAJuABIAAAKUAAAAGGxvY2EAjABWAAACrAAAAA5tYXhwAAgAFgAAArwAAAAgbmFtZfC1n04AAALcAAABPHBvc3QAAwAAAAAEGAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQASAEkAtwFuABMAADc0PwE2FzYXFh0BFAcGJwYvASY1EgaABQgHBQYGBQcIBYAG2wcGfwcBAQcECf8IBAcBAQd/BgYAAAAAAQAAAEkApQFuABMAADcRNDc2MzIfARYVFA8BBiMiJyY1AAUGBwgFgAYGgAUIBwYFWwEACAUGBoAFCAcFgAYGBQcAAAABAAAAAQAAqWYls18PPPUACwIAAAAAAM/9o+4AAAAAz/2j7gAAAAAAtwFuAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAC3AAEAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAQAAAAC3ABIAtwAAAAAAAAAKABQAHgBCAGQAAAABAAAABgAUAAEAAAAAAAIAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype');
+  font-weight: 400;
+}
+
+body {
+  text-align: left;
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.4285em;
+  color: #282c32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ui.grid > * {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.ui.grid > .column:not(.row) {
+  position: relative;
+  display: inline-block;
+  width: 6.25%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+.ui.grid > .column:not(.row) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ui.grid > [class*="sixteen wide"].column {
+  width: 100%!important;
+}
+
+.ui.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: -1rem;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, .87);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+  height: 100%;
+}
+
+:root {
+  --font-family-primary: 'Lato', sans-serif;
+  --default-font-size-bangla: 18px;
+}
+
+/* Add more styles below as needed */
+

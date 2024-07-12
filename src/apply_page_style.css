@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+}
+
+
+/*              Body Start              */
+
+:root{
+    --gradient: linear-gradient(
+        45deg,
+        #07960ecc,
+        #09ce1385,
+        #ce0909b2
+    );
+}
+
+.body{
+    height: 83.2vh;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation{
+    0% {background-position:left}
+    100% {background-position: right;}
+}
+
+.form_container{
+    margin: 0 auto;
+    padding: 20px 5px;
+    width: 50%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+.form_header{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.form_field{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.form_field table{
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+}
+
+/* .form_field table tr{} */
+
+.form_field table tr td{
+    text-align: left;
+}
+
+.form_field table tr td label{
+    color: white;
+} 
+
+.form_field table tr td input{
+    text-transform: capitalize;
+    margin-left: 300px;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.form_field table tr td select{
+    text-transform: capitalize;
+    margin-left: 300px;
+    width: 200px;
+    height: 30px;
+    padding-left: 6px;
+}
+
+/* .form_button{} */
+
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes child1{
+    0%{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent, #259f4d);
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+@keyframes child2{
+    0%{
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent, #259f4d);
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+@keyframes child3{
+    0%{
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent, #259f4d);
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+@keyframes child4{
+    0%{
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent, #259f4d);
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.form_button a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #259f4d;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.form_button a:hover{
+    color: #bdf81c;
+    background: #259f4d;
+    box-shadow: 0 0 10px #259f4d, 0 0 40px #259f4d, 0 0 80px #259f4d;
+    transition-delay: 0.5s;
+}
+
+.form_button a span{
+    position: absolute;
+    display: block;
+}
+
+.form_button a span:nth-child(1){
+    animation: child1 1s linear infinite;
+}
+
+.form_button a span:nth-child(2){
+    animation: child2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+.form_button a span:nth-child(3){
+    animation: child3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.form_button a span:nth-child(4){
+    animation: child4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+
+/*              Body End              */

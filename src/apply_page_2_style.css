@@ -1,0 +1,26 @@
+
+
+.body_page2{
+    padding-top: 50px;
+}
+
+.form_container_page2{
+    height: 680px;  
+}
+
+#country_code{
+    width: 50px;
+}
+
+#phone_no{
+    width: 200px;
+    margin-left: 0px;
+}
+
+.form_field_page2 table tr td input{
+    width: 250px;
+}
+
+.form_field_page2 table tr td select{
+    width: 250px;
+}
