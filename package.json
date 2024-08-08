@@ -11,6 +11,7 @@
     "dotenv": "16.4.5",
     "express": "4.19.2",
     "history": "5.3.0",
+    "json-server": "^1.0.0-beta.1",
     "mong-server-api": "0.1.66",
     "mongodb": "6.5.0",
     "mongodb-connection-string-url": "3.0.0",
@@ -29,7 +30,6 @@
     "vite": "^5.0.11"
   },
   "scripts": {
-    
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",

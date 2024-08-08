@@ -6,6 +6,7 @@ import User_dashboard from "./User_dashboard";
 import Apply_page_1 from "./Apply_page_1";
 import Apply_page_2 from "./Apply_page_2";
 import Apply_page_3 from "./Apply_page_3";
+import Admin_dashboard from "./Admin_dashboard";
 import Faq from "./Faq";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <Route path="/Apply_page_1" element={<Apply_page_1 />} />
       <Route path="/Apply_page_2" element={<Apply_page_2 />} />
       <Route path="/Apply_page_3" element={<Apply_page_3 />} />
+      <Route path="/Admin_dashboard" element={<Admin_dashboard/>}/>
       <Route path="/Faq" element={<Faq />} />
     </Routes>
   );
